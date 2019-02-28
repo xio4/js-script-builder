@@ -1,0 +1,33 @@
+{
+    "name": "mugus",
+    "version": "0.0.1",
+    "description": "mugus is a simple scripter for automation",
+    "main": "index.js",
+    "scripts": {
+        "build": "node node_modules/.bin/webpack --mode=development",
+        "build:prod": "node node_modules/.bin/webpack --mode=production",
+        "build:watch": "node node_modules/.bin/webpack --mode=development --watch",
+        "start": "node dist/bundle.js",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "Petr Shalkov",
+    "dependencies": {
+        "@tinkoff/utils": "2.0.0-alpha.2",
+        "superagent": "3.8.3",
+        "commander": "^2.19.0"
+    },
+    "devDependencies": {
+        "@types/node": "^10.9.0",
+        "awesome-typescript-loader": "^5.2.0",
+        "chai": "^4.2.0",
+        "mocha": "^6.0.2",
+        "pkg": "^4.3.7",
+        "prettier": "^1.16.4",
+        "sinon": "^7.2.0",
+        "source-map-loader": "^0.2.4",
+        "typescript": "^3.3.3333",
+        "webpack": "^4.29.5",
+        "webpack-cli": "^3.2.2"
+    },
+    "license": "MIT"
+}
