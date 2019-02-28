@@ -1,7 +1,7 @@
 {
-    "name": "mugus",
+    "name": "js-script-builder",
     "version": "0.0.1",
-    "description": "mugus is a simple scripter for automation",
+    "description": "The simple builder for ts/js",
     "main": "index.js",
     "scripts": {
         "build": "node node_modules/.bin/webpack --mode=development",
