@@ -1,5 +1,8 @@
+const { CheckerPlugin } = require('awesome-typescript-loader');
+const path = require('path');
+
 module.exports = {
-    target: 'node',
+    target: "node",
     entry: "./src/index.ts",
     output: {
         filename: "bundle.js",
@@ -27,5 +30,9 @@ module.exports = {
     watchOptions: {
         aggregateTimeout: 300,
         poll: 1000
-    }
+    },
+
+    plugins: [
+        new CheckerPlugin()
+    ]
 };
